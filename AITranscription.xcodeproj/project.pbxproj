@@ -21,11 +21,9 @@
 		81F4AF13EF0C81BEEA32F55E /* AudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D2066FD6A417FCEF57DC37 /* AudioFile.swift */; };
 		99632BEA96BFC48CDC0A7A54 /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDB232A301B310F06A53525 /* Summary.swift */; };
 		A83DE30A7FDB656A8A612C67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19548A4BEF6794F267F0F2EA /* ContentView.swift */; };
-		B3314EBFF0658642500BB823 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = F3DDFC3DDA5E69B0355D1AE6 /* Contents.json */; };
 		C1910C04687DCE161947E8D7 /* CustomTemplatePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DBBBECCB05C076907E694B /* CustomTemplatePreviewView.swift */; };
 		C1F24A9A5A52AA3D1FF4F3E6 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC80DB6B66796E7BB1F5A93 /* LibraryView.swift */; };
 		CE6CE3351D70D394F8674123 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B12A60A83AFB39F30B4519D /* Assets.xcassets */; };
-		D5F85A40B22EC54F1C530A81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C610F0A33114114454EBE81E /* Preview Assets.xcassets */; };
 		ED771F085DB42FD5F943C8D1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BFB8A72D63ECBC67B0ECF6 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,14 +41,12 @@
 		A0230BEEE5F600CE6C45C298 /* TemplateSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateSelectionView.swift; sourceTree = "<group>"; };
 		A04237228B7C2FF991E4AFD6 /* AITranscriptionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AITranscriptionApp.swift; sourceTree = "<group>"; };
 		ABC80DB6B66796E7BB1F5A93 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
-		C610F0A33114114454EBE81E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D180477BD138B9DE3CAC0BAC /* AITranscription.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = AITranscription.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D34A9DF6904608AA9B60C5 /* Transcript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcript.swift; sourceTree = "<group>"; };
 		D7F035BB3D83BBF62DD82D52 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
 		D81D7EC0B5341F7EACEC0DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D9395ED77635A56FD37274D3 /* SummaryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryService.swift; sourceTree = "<group>"; };
 		EA88609CC4F2EE8B997B6FE3 /* CustomTemplateBuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTemplateBuilderView.swift; sourceTree = "<group>"; };
-		F3DDFC3DDA5E69B0355D1AE6 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		FF274326B5E604040A1BCC16 /* Contents.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,10 +54,8 @@
 		245B14EF6417F8ADE4F105D2 /* AITranscription */ = {
 			isa = PBXGroup;
 			children = (
-				BD4087F6032491848F927283 /* Context */,
 				75F2449D46AC97A6361B0F60 /* Models */,
 				6135349E40D264564808B81A /* Preview */,
-				DF4CE59B6001D2CEBD2CEA41 /* Preview Content */,
 				617D2DC689C61563972862B8 /* Services */,
 				E083AE7BBC446D3DA702F697 /* Views */,
 				A04237228B7C2FF991E4AFD6 /* AITranscriptionApp.swift */,
@@ -106,22 +100,6 @@
 				245B14EF6417F8ADE4F105D2 /* AITranscription */,
 				FBB1EA5B4422E1171C4B9A86 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		BD4087F6032491848F927283 /* Context */ = {
-			isa = PBXGroup;
-			children = (
-				F3DDFC3DDA5E69B0355D1AE6 /* Contents.json */,
-			);
-			path = Context;
-			sourceTree = "<group>";
-		};
-		DF4CE59B6001D2CEBD2CEA41 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				C610F0A33114114454EBE81E /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		E083AE7BBC446D3DA702F697 /* Views */ = {
@@ -202,9 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE6CE3351D70D394F8674123 /* Assets.xcassets in Resources */,
-				B3314EBFF0658642500BB823 /* Contents.json in Resources */,
 				762295B243FB55C31C89FB6E /* Contents.json in Resources */,
-				D5F85A40B22EC54F1C530A81 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +281,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_ASSET_PATHS = AITranscription/Preview;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AITranscription/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs access to the microphone to record audio for transcription.";
@@ -331,7 +306,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_ASSET_PATHS = AITranscription/Preview;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AITranscription/Info.plist;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = "This app needs access to the microphone to record audio for transcription.";
