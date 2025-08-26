@@ -1,7 +1,7 @@
 import Foundation
 
 struct Transcript: Identifiable, Codable {
-    let id = UUID()
+    let id: UUID
     let audioFileId: UUID
     let createdAt: Date
     let processingMode: ProcessingMode
@@ -47,6 +47,7 @@ struct Transcript: Identifiable, Codable {
     }
     
     init(audioFileId: UUID, processingMode: ProcessingMode, segments: [TranscriptSegment], confidence: Double, language: String = "en") {
+        self.id = UUID()
         self.audioFileId = audioFileId
         self.createdAt = Date()
         self.processingMode = processingMode
@@ -57,7 +58,7 @@ struct Transcript: Identifiable, Codable {
 }
 
 struct TranscriptSegment: Identifiable, Codable {
-    let id = UUID()
+    let id: UUID
     let startTime: TimeInterval
     let endTime: TimeInterval
     let text: String
@@ -81,6 +82,7 @@ struct TranscriptSegment: Identifiable, Codable {
     }
     
     init(startTime: TimeInterval, endTime: TimeInterval, text: String, speaker: String? = nil, confidence: Double = 1.0) {
+        self.id = UUID()
         self.startTime = startTime
         self.endTime = endTime
         self.text = text

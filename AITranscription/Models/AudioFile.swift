@@ -2,7 +2,7 @@ import Foundation
 import SwiftUI
 
 struct AudioFile: Identifiable, Codable {
-    let id = UUID()
+    let id: UUID
     let fileName: String
     let fileURL: URL
     let duration: TimeInterval
@@ -55,6 +55,7 @@ struct AudioFile: Identifiable, Codable {
     }
     
     init(fileName: String, fileURL: URL, duration: TimeInterval, fileSize: Int64, audioFormat: AudioFormat) {
+        self.id = UUID()
         self.fileName = fileName
         self.fileURL = fileURL
         self.duration = duration

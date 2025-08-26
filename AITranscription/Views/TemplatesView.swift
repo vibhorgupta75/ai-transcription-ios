@@ -298,13 +298,14 @@ struct TemplatePreviewView: View {
 
 // MARK: - Custom Template Models
 struct CustomTemplate: Identifiable, Codable {
-    let id = UUID()
+    let id: UUID
     let name: String
     let description: String
     let sections: [CustomSection]
     let createdAt: Date
     
     init(name: String, description: String, sections: [CustomSection]) {
+        self.id = UUID()
         self.name = name
         self.description = description
         self.sections = sections
@@ -313,10 +314,17 @@ struct CustomTemplate: Identifiable, Codable {
 }
 
 struct CustomSection: Identifiable, Codable {
-    let id = UUID()
+    let id: UUID
     let title: String
     let type: SectionType
     let order: Int
+    
+    init(title: String, type: SectionType, order: Int) {
+        self.id = UUID()
+        self.title = title
+        self.type = type
+        self.order = order
+    }
     
     enum SectionType: String, Codable, CaseIterable {
         case text = "text"

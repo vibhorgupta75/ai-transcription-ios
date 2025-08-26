@@ -1,7 +1,7 @@
 import Foundation
 
 struct Summary: Identifiable, Codable {
-    let id = UUID()
+    let id: UUID
     let transcriptId: UUID
     let audioFileId: UUID
     let createdAt: Date
@@ -10,6 +10,7 @@ struct Summary: Identifiable, Codable {
     let processingMode: Transcript.ProcessingMode
     
     init(transcriptId: UUID, audioFileId: UUID, templateType: SummaryTemplate, content: SummaryContent, processingMode: Transcript.ProcessingMode) {
+        self.id = UUID()
         self.transcriptId = transcriptId
         self.audioFileId = audioFileId
         self.createdAt = Date()
@@ -85,12 +86,13 @@ struct SummaryContent: Codable {
 }
 
 struct SummarySection: Identifiable, Codable {
-    let id = UUID()
+    let id: UUID
     let title: String
     let content: String
     let order: Int
     
     init(title: String, content: String, order: Int) {
+        self.id = UUID()
         self.title = title
         self.content = content
         self.order = order
@@ -98,7 +100,7 @@ struct SummarySection: Identifiable, Codable {
 }
 
 struct ActionItem: Identifiable, Codable {
-    let id = UUID()
+    let id: UUID
     let description: String
     let assignee: String?
     let dueDate: Date?
@@ -147,6 +149,7 @@ struct ActionItem: Identifiable, Codable {
     }
     
     init(description: String, assignee: String? = nil, dueDate: Date? = nil, priority: Priority = .medium, status: Status = .pending) {
+        self.id = UUID()
         self.description = description
         self.assignee = assignee
         self.dueDate = dueDate
