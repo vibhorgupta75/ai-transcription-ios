@@ -136,15 +136,19 @@ struct LibraryView: View {
     
     private func generateMockAudioFiles() -> [AudioFile] {
         let mockFiles = [
-            ("Team Standup Meeting", 1800, .completed),
-            ("Client Call - Project Review", 2700, .completed),
-            ("Interview with Candidate", 3600, .completed),
-            ("Brainstorming Session", 1800, .processing),
-            ("1-on-1 Performance Review", 1200, .pending),
-            ("Product Demo Recording", 900, .failed)
+            ("Team Standup Meeting", 1800, AudioFile.ProcessingStatus.completed),
+            ("Client Call - Project Review", 2700, AudioFile.ProcessingStatus.completed),
+            ("Interview with Candidate", 3600, AudioFile.ProcessingStatus.completed),
+            ("Brainstorming Session", 1800, AudioFile.ProcessingStatus.processing),
+            ("1-on-1 Performance Review", 1200, AudioFile.ProcessingStatus.pending),
+            ("Product Demo Recording", 900, AudioFile.ProcessingStatus.failed)
         ]
         
-        return mockFiles.enumerated().map { index, (name, duration, status) in
+        return mockFiles.enumerated().map { index, tuple in
+            let name = tuple.0
+            let duration = tuple.1
+            let status = tuple.2
+            
             let audioFile = AudioFile(
                 fileName: name,
                 fileURL: URL(string: "file://mock/\(index).m4a")!,
@@ -157,7 +161,7 @@ struct LibraryView: View {
             file.processingStatus = status
             
             // Add mock transcript and summary for completed files
-            if status == .completed {
+            if status == AudioFile.ProcessingStatus.completed {
                 file.transcript = createMockTranscript(for: file, mode: .basic)
                 file.summary = createMockSummary(for: file, transcript: file.transcript!)
             }
