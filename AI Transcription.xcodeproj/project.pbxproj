@@ -11,20 +11,6 @@
 		A1234567890123456789012C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789012D /* ContentView.swift */; };
 		A1234567890123456789012E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789012F /* Assets.xcassets */; };
 		A1234567890123456789013A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789013B /* Preview Assets.xcassets */; };
-		A1234567890123456789013C /* AudioRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789013D /* AudioRecorder.swift */; };
-		A1234567890123456789013E /* TranscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789013F /* TranscriptionService.swift */; };
-		A1234567890123456789014A /* SummaryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789014B /* SummaryService.swift */; };
-		A1234567890123456789014C /* AudioFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789014D /* AudioFile.swift */; };
-		A1234567890123456789014E /* Transcript.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789014F /* Transcript.swift */; };
-		A1234567890123456789014F /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789015A /* Summary.swift */; };
-		A1234567890123456789015B /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789015C /* RecordingView.swift */; };
-		A1234567890123456789015D /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789015E /* LibraryView.swift */; };
-		A1234567890123456789015F /* TemplatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789016A /* TemplatesView.swift */; };
-		A1234567890123456789016B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789016C /* SettingsView.swift */; };
-		A1234567890123456789016D /* TemplateSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789016E /* TemplateSelectionView.swift */; };
-		A1234567890123456789016F /* CustomTemplateBuilderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789017A /* CustomTemplateBuilderView.swift */; };
-		A1234567890123456789017B /* AudioFileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789017C /* AudioFileDetailView.swift */; };
-		A1234567890123456789017D /* CustomTemplatePreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1234567890123456789017E /* CustomTemplatePreviewView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,20 +19,6 @@
 		A1234567890123456789012C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A1234567890123456789012D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1234567890123456789012E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A1234567890123456789013D /* AudioRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRecorder.swift; sourceTree = "<group>"; };
-		A1234567890123456789013F /* TranscriptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptionService.swift; sourceTree = "<group>"; };
-		A1234567890123456789014B /* SummaryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryService.swift; sourceTree = "<group>"; };
-		A1234567890123456789014D /* AudioFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFile.swift; sourceTree = "<group>"; };
-		A1234567890123456789014E /* Transcript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcript.swift; sourceTree = "<group>"; };
-		A1234567890123456789015A /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
-		A1234567890123456789015C /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
-		A1234567890123456789015E /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
-		A1234567890123456789016A /* TemplatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatesView.swift; sourceTree = "<group>"; };
-		A1234567890123456789016C /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		A1234567890123456789016E /* TemplateSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateSelectionView.swift; sourceTree = "<group>"; };
-		A1234567890123456789017A /* CustomTemplateBuilderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTemplateBuilderView.swift; sourceTree = "<group>"; };
-		A1234567890123456789017C /* AudioFileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioFileDetailView.swift; sourceTree = "<group>"; };
-		A1234567890123456789017E /* CustomTemplatePreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTemplatePreviewView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +45,8 @@
 			children = (
 				A1234567890123456789012B /* AITranscriptionApp.swift */,
 				A1234567890123456789012C /* ContentView.swift */,
-				A1234567890123456789012K /* Views */,
-				A1234567890123456789012L /* Models */,
-				A1234567890123456789012M /* Services */,
-				A1234567890123456789012N /* Resources */,
+				A1234567890123456789012D /* Assets.xcassets */,
+				A1234567890123456789012E /* Preview Assets.xcassets */,
 			);
 			path = AITranscription;
 			sourceTree = "<group>";
@@ -87,50 +57,6 @@
 				A1234567890123456789012A /* AITranscription.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		A1234567890123456789012K /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				A1234567890123456789015C /* RecordingView.swift */,
-				A1234567890123456789015E /* LibraryView.swift */,
-				A1234567890123456789016A /* TemplatesView.swift */,
-				A1234567890123456789016C /* SettingsView.swift */,
-				A1234567890123456789016E /* TemplateSelectionView.swift */,
-				A1234567890123456789017A /* CustomTemplateBuilderView.swift */,
-				A1234567890123456789017C /* AudioFileDetailView.swift */,
-				A1234567890123456789017E /* CustomTemplatePreviewView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		A1234567890123456789012L /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				A1234567890123456789014D /* AudioFile.swift */,
-				A1234567890123456789014E /* Transcript.swift */,
-				A1234567890123456789015A /* Summary.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		A1234567890123456789012M /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				A1234567890123456789013D /* AudioRecorder.swift */,
-				A1234567890123456789013F /* TranscriptionService.swift */,
-				A1234567890123456789014B /* SummaryService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		A1234567890123456789012N /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				A1234567890123456789012D /* Assets.xcassets */,
-				A1234567890123456789012E /* Preview Assets.xcassets */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,20 +130,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1234567890123456789012C /* ContentView.swift */,
-				A1234567890123456789013C /* AudioRecorder.swift */,
-				A1234567890123456789013E /* TranscriptionService.swift */,
-				A1234567890123456789014A /* SummaryService.swift */,
-				A1234567890123456789014C /* AudioFile.swift */,
-				A1234567890123456789014E /* Transcript.swift */,
-				A1234567890123456789014F /* Summary.swift */,
-				A1234567890123456789015B /* RecordingView.swift */,
-				A1234567890123456789015D /* LibraryView.swift */,
-				A1234567890123456789015F /* TemplatesView.swift */,
-				A1234567890123456789016B /* SettingsView.swift */,
-				A1234567890123456789016D /* TemplateSelectionView.swift */,
-				A1234567890123456789016F /* CustomTemplateBuilderView.swift */,
-				A1234567890123456789017B /* AudioFileDetailView.swift */,
-				A1234567890123456789017D /* CustomTemplatePreviewView.swift */,
 				A1234567890123456789012A /* AITranscriptionApp.swift */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
