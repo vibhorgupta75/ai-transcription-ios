@@ -119,7 +119,7 @@
 			children = (
 				A1234567890123456789013D /* AudioRecorder.swift */,
 				A1234567890123456789013F /* TranscriptionService.swift */,
-				A1234567890123456789014B /* SummaryService.swift */;
+				A1234567890123456789014B /* SummaryService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
