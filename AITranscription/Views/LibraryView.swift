@@ -39,7 +39,15 @@ struct LibraryView: View {
         
         // Apply status filter
         if selectedFilter != .all {
-            filtered = filtered.filter { $0.processingStatus.rawValue == selectedFilter.rawValue.lowercased() }
+            filtered = filtered.filter { audioFile in
+                switch selectedFilter {
+                case .pending: return audioFile.processingStatus == .pending
+                case .processing: return audioFile.processingStatus == .processing
+                case .completed: return audioFile.processingStatus == .completed
+                case .failed: return audioFile.processingStatus == .failed
+                case .all: return true
+                }
+            }
         }
         
         return filtered.sorted { $0.recordingDate > $1.recordingDate }
@@ -114,7 +122,15 @@ struct LibraryView: View {
             return audioFiles.count
         }
         
-        let status = AudioFile.ProcessingStatus(rawValue: filter.rawValue.lowercased()) ?? .pending
+        let status: AudioFile.ProcessingStatus
+        switch filter {
+        case .pending: status = .pending
+        case .processing: status = .processing
+        case .completed: status = .completed
+        case .failed: status = .failed
+        case .all: return audioFiles.count
+        }
+        
         return audioFiles.filter { $0.processingStatus == status }.count
     }
     

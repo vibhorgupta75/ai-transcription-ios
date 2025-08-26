@@ -72,9 +72,8 @@ class AudioRecorder: NSObject, ObservableObject {
         stopRecordingTimer()
         stopAudioLevelMonitoring()
         
-        if let recorder = audioRecorder,
-           let url = recorder.url {
-            createAudioFile(from: url)
+        if let recorder = audioRecorder {
+            createAudioFile(from: recorder.url)
         }
     }
     

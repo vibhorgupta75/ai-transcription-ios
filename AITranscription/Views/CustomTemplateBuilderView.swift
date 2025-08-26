@@ -31,9 +31,9 @@ struct CustomTemplateBuilderView: View {
                         TextField("Template Name", text: $templateName)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                         
-                        TextField("Description", text: $templateDescription, axis: .vertical)
+                        TextField("Description", text: $templateDescription)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .lineLimit(3...6)
+                            .frame(height: 80)
                     }
                     
                     Section("Sections") {
@@ -181,7 +181,7 @@ struct AddSectionView: View {
                             Text(type.displayName).tag(type)
                         }
                     }
-                    .pickerStyle(SinglePickerStyle())
+                                            .pickerStyle(MenuPickerStyle())
                 }
                 
                 Section("Section Type Description") {

@@ -284,7 +284,7 @@ struct ExportOptionsView: View {
                         Text("PDF (.pdf)").tag("pdf")
                         Text("Markdown (.md)").tag("markdown")
                     }
-                    .pickerStyle(SinglePickerStyle())
+                                            .pickerStyle(MenuPickerStyle())
                 }
                 
                 Section("Transcript Options") {
