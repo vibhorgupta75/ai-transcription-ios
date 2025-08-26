@@ -26,7 +26,7 @@ targets:
         SWIFT_VERSION: 5.0
         TARGETED_DEVICE_FAMILY: "1,2"
         ENABLE_PREVIEWS: YES
-        DEVELOPMENT_ASSET_PATHS: "AITranscription/Preview Content"
+        DEVELOPMENT_ASSET_PATHS: "AITranscription/Preview"
     info:
       path: AITranscription/Info.plist
       properties:
